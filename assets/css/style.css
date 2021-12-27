@@ -1,0 +1,48 @@
+@media (min-width: 300px) {
+  .cra {
+    height: 60%;
+  }
+}
+
+@media (min-width: 400px) {
+  .cra {
+    height: 60%;
+  }
+}
+
+@media (min-width: 576px) {
+  .cra {
+    height: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cra {
+    height: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cra {
+    height: 85%;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .cra {
+    height: 90%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .carouselSet {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.hoverItem {
+}
+
