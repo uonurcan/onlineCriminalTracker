@@ -27,20 +27,22 @@ $personDetail = personDetail($db, $personId, $slc,$tt);
                                     <div id="product-preview" class="vanilla-zoom">
                                         <div class="zoomed-image"></div>
                                         <div class="sidebar">
-                                            <img class="img-fluid d-block small-preview" src="images/<?php echo $personDetail["mp_photos"];?>"></div>
+                                            <img class="img-fluid d-block small-preview" src="images/<?php echo $personDetail["mp_photos"];?>">
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="info">
-                                    <h3><?php echo $personDetail["mp_name"]." ".$personDetail["mp_surname"];?></h3>
-                                    <div class="rating"
-                                    ><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                    <h3><?php echo $personDetail["mp_name"].'  '. $personDetail["mp_age"];;?></h3>
+                                  
                                     <div class="price">
-                                        <h3>$300.00</h3>
+                                        <h3><?php echo $personDetail["mp_phone"];?></h3>
                                     <div class="summary">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nunc, pretium at augue at, convallis pellentesque ipsum. Vestibulum diam risus, sagittis at fringilla at, pulvinar vel risus. Vestibulum dignissim eu nulla eu imperdiet. Morbi mollis tellus a nunc vestibulum consequat. Quisque tristique elit et nibh dapibus sodales. Nam sollicitudin a urna sed iaculis.</p>                    
-                                    
+                                        <p><?php echo $personDetail["mp_details"];?></p>                    
+                                      
+                                        <h5>Contact Address :</h5> </br><h6> <?php echo $personDetail["mp_contact"];?></h6>
                                     </div>
                                 </div>
                             </div>

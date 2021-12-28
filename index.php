@@ -13,8 +13,7 @@ $r_cp = homecpdetail($db);
 <main class="page landing-page">
     <section class="clean-block clean-hero" style="color: rgba(0,0,0,0.54);background: url(&quot;assets/img/1BXNgBK-crime-scene-wallpaper.jpg&quot;) center / cover no-repeat;">
         <div class="pulse animated text" style="filter: brightness(NaN%);opacity: 0.69;transform-origin: center;">
-            <h1>Online Criminal Tracking System</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+            <h1 style="padding-bottom: 10px;">Online Criminal Tracking System</h1>
             <a class="btn btn-outline-light btn-lg" role="button" href="faq.php">Learn More</a>
         </div>
     </section>
@@ -40,7 +39,7 @@ $r_cp = homecpdetail($db);
                                     <img class="d-block img-fluid" style="border-radius:20px; margin:auto;  max-width: 60%; width:100% height: auto;" src="images/<?php echo $rec["mp_photos"]; ?>" alt="Slide Image">
                                     <div class="row" style="padding-top: 10px;">
                                         <div class="col">
-                                            <h3><?php echo $rec['mp_name'] . ' ' . $rec['mp_surname']; ?></h3>
+                                            <h3><?php echo $rec['mp_name']; ?></h3>
                                             <div class="getting-started-info">
                                                 <p><?php echo $rec["mp_details"]; ?></p>
                                             </div><a class="btn btn-outline-primary btn-lg" role="button" href="/missingPeople.php?id=<?php echo $rec["mp_id"] ?>" style="color: #8a24b1;border-color: #8a24b1;">Get Detail</a>
@@ -73,7 +72,7 @@ $r_cp = homecpdetail($db);
                                     <img class="d-block img-fluid" style="border-radius:20px; margin:auto;  max-width: 60%; width:100% height: auto;" src="images/<?php echo $rec["cp_photos"]; ?>" alt="Slide Image">
                                     <div class="row" style="padding-top: 10px;">
                                         <div class="col">
-                                            <h3><?php echo $rec['cp_name'] . ' ' . $rec['cp_surname']; ?></h3>
+                                            <h3><?php echo $rec['cp_name']; ?></h3>
                                             <div class="getting-started-info">
                                                 <p><?php echo $rec["cp_details"]; ?></p>
                                             </div><a class="btn btn-outline-primary btn-lg" role="button" href="/criminalPeople.php?id=<?php echo $rec["cp_id"] ?>" style="color: #8a24b1;border-color: #8a24b1;">Get Detail</a>

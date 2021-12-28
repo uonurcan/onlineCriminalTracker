@@ -1,7 +1,7 @@
 <?php
 $title ="Criminals";
 $slc = "cp";
-$tt='criminalPeople';
+$tt='criminalpeople';
 
 $personId = intval($_GET['id']);
 
@@ -27,20 +27,23 @@ $personDetail = personDetail($db, $personId, $slc,$tt);
                                     <div id="product-preview" class="vanilla-zoom">
                                         <div class="zoomed-image"></div>
                                         <div class="sidebar">
-                                        <img class="img-fluid d-block small-preview" src="images/<?php echo $personDetail["cp_photos"];?>"></div>
+                                            <img class="img-fluid d-block small-preview" src="images/<?php echo $personDetail["cp_photos"];?>">
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="info">
-                                <h3><?php echo $personDetail["cp_name"]." ".$personDetail["cp_surname"];?></h3>
-                                    <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                    <h3><?php echo $personDetail["cp_name"].'  '. $personDetail["cp_age"];;?></h3>
+                                  
                                     <div class="price">
-                                        <h3>$300.00</h3>
-                                   
+                                        <h3><?php echo $personDetail["cp_phone"];?></h3>
                                     <div class="summary">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nunc, pretium at augue at, convallis pellentesque ipsum. Vestibulum diam risus, sagittis at fringilla at, pulvinar vel risus. Vestibulum dignissim eu nulla eu imperdiet. Morbi mollis tellus a nunc vestibulum consequat. Quisque tristique elit et nibh dapibus sodales. Nam sollicitudin a urna sed iaculis.</p>
-                                    </div>
+                                        <p><?php echo $personDetail["cp_details"];?></p>                    
+                                      
+                                        <h5>Contact Address :</h5> </br><h6> <?php echo $personDetail["cp_contact"];?></h6>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +52,8 @@ $personDetail = personDetail($db, $personId, $slc,$tt);
             </div>
         </section>
     </main>
+    
     <?php
 include 'footer.php';
 include 'scriptLinks.php';
-
  ?>

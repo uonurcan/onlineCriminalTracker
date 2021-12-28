@@ -13,22 +13,21 @@ include 'styleLinks.php';
                 </div>
                 <div data-aos="fade-down" data-aos-once="true" class="block-content">
                     <div class="faq-item">
-                        <h4 class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <h4 class="question">What is BugSens Tracker?.</h4>
                         <div class="answer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>It is the application where we publicly publish criminals, wanted people, and missing people who have passed 24 hours over the world, approved by the authorities, to our database.</p>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <h4 class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <h4 class="question">How can I apply to report?</h4>
                         <div class="answer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            <p>You can send us your report from the contact us section in the navigation bar. If you fill in the information completely, our authorities will examine it and share it with the public on our site.</p>
                         </div>
                     </div>
                     <div class="faq-item">
-                        <h4 class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                        <h4 class="question">How can i search people?</h4>
                         <div class="answer">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>You can query by names from the search section on the page where I view missing or criminal people.</p>
                         </div>
                     </div>
                 </div>

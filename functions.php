@@ -2,13 +2,8 @@
 
 function searchPeople($db, $name, $slc, $tt) {
     
-$query = 'select * from '. $tt .' where '.$slc.'_name  like ?';
-$name = '%'.$name."%";
-$stmt = $db->stmt_init();
-$stmt->prepare($query) or exit('Query Error.' . $db->errno);
-@$stmt->bind_param('s', trim($name)) or exit('Bind Param Error.');
-$stmt->execute() or exit('Query Execution failed.' . $db->errno);
-$r = $stmt->get_result();
+$query = 'select * from '. $tt .' where '.$slc.'_name like "%'.$name.'%"';
+$r=$db->query($query);
 return $r;
 }
 
@@ -25,7 +20,6 @@ function personDetail($db, $personId, $slc, $tt) {
        return $rec;
     }
  }
-
 
  //Index Page carousel --------
 

@@ -18,20 +18,20 @@
 
 @media (min-width: 768px) {
   .cra {
-    height: 80%;
+    height: 72%;
   }
 }
 
 @media (min-width: 992px) {
   .cra {
-    height: 85%;
+    height: 78%;
 
   }
 }
 
 @media (min-width: 1200px) {
   .cra {
-    height: 90%;
+    height: 75%;
   }
   
 }
