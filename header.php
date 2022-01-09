@@ -10,10 +10,10 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link size" href="../">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="faq">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link size" href="criminals">CRIMINALS</a></li>
-                <li class="nav-item"><a class="nav-link size" href="missing">Missıng people</a></li>
-                <li class="nav-item"><a class="nav-link size" href="teamabout">About Us</a></li>
-                <li class="nav-item"><a class="nav-link size" href="contact-us">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link size" href="criminals.php">CRIMINALS</a></li>
+                <li class="nav-item"><a class="nav-link size" href="missing.php">Missıng people</a></li>
+                <li class="nav-item"><a class="nav-link size" href="teamabout.php">About Us</a></li>
+                <li class="nav-item"><a class="nav-link size" href="contact-us.php">Contact Us</a></li>
             </ul>
         </div>
     </div>
