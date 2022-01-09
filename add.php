@@ -35,7 +35,7 @@ if (isset($_POST['formsend']) || isset($_POST['admiadd'])) { //post all data
         if (sendForm($db, $select, $reporter, $reporteremail, $phone, $name, $age, $contact, $details, $filename, $publish)) {
             echo ("<script LANGUAGE='JavaScript'>
                           window.alert('Succesfully Added!');
-                          window.location.href='../admin.php';
+                          window.location.href='../admin';
                           </script>");
         }
     } else {
@@ -50,12 +50,12 @@ if (isset($_POST['update'])) {
     if (updateperson($db, $slc, $publish, $id)) {
         echo ("<script LANGUAGE='JavaScript'>
                   window.alert('Succesfully Updated!');
-                  window.location.href='admin.php';
+                  window.location.href='admin';
                   </script>");
     } else {
         die("<script LANGUAGE='JavaScript'>
         window.alert('There is a Error sending form!');
-        window.location.href='admin.php';
+        window.location.href='admin';
         </script>");
     }
 }

@@ -4,7 +4,7 @@ ob_start();
 function redirectisuserlogin()
 {
    if (isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == 'OK') {
-      header('location:admin.php');
+      header('location:admin');
    }
 }
 
@@ -17,7 +17,7 @@ function edituser($db, $editname, $department, $id)
    $stmt->execute() or exit('Query Execution failed.' . $db->errno);
    if (mysqli_affected_rows($db) == 1) {
       mysqli_close($db);
-      header('Location:inc/logout.php');
+      header('Location:logout');
       exit();
    } else {
       echo "Error With Updated!";

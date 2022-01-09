@@ -1,6 +1,6 @@
 <?php
 if (!isset($_SESSION['userlogin']) && $_SESSION['userlogin'] != 'OK') {
-    header('Location: ../adminlogin.php');
+    header('Location: ../adminlogin');
 }
 ?>
 
@@ -14,7 +14,7 @@ if (!isset($_SESSION['userlogin']) && $_SESSION['userlogin'] != 'OK') {
                     <li class="nav-item">
                         <a class="nav-link <?php if ($title == 'Dashboard') {
                                                 echo "active";
-                                            } ?>" href="../admin.php">
+                                            } ?>" href="../admin">
                             <i class="fas fa-tachometer-alt" style="color: var(--bs-dark);">
                             </i><span style="color: #3a3b45;">Dashboard</span></a>
                     </li>
@@ -22,7 +22,7 @@ if (!isset($_SESSION['userlogin']) && $_SESSION['userlogin'] != 'OK') {
                     <li class="nav-item">
                         <a class="nav-link <?php if ($title == 'Profile') {
                                                 echo "active";
-                                            } ?> " href="../adminProfile.php">
+                                            } ?> " href="../adminProfile">
                             <i class="fas fa-user" style="color: #3a3b45;"></i>
                             <span style="color: #3a3b45;">Profile</span></a>
                     </li>
@@ -30,7 +30,7 @@ if (!isset($_SESSION['userlogin']) && $_SESSION['userlogin'] != 'OK') {
                     <li class="nav-item">
                         <a class="nav-link <?php if ($title == 'Criminal People') {
                                                 echo "active";
-                                            } ?>" href="../adminCPlist.php">
+                                            } ?>" href="../adminCPlist">
                             <i class="fas fa-table" style="color: #3a3b45;"></i>
                             <span style="color: #3a3b45;">Criminal People</span></a>
                     </li>
@@ -38,7 +38,7 @@ if (!isset($_SESSION['userlogin']) && $_SESSION['userlogin'] != 'OK') {
                     <li class="nav-item">
                         <a class="nav-link <?php if ($title == 'Missing People') {
                                                 echo "active";
-                                            } ?>" href="../adminMPlist.php">
+                                            } ?>" href="../adminMPlist">
                             <i class="fas fa-table" style="color: #3a3b45;"></i>
                             <span style="color: #3a3b45;">Missing People&nbsp;</span></a>
                     </li>
