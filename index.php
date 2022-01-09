@@ -9,7 +9,6 @@ $r_mp = homempdetail($db);
 $r_cp = homecpdetail($db);
 
 ?>
-
 <main class="page landing-page">
     <section class="clean-block clean-hero" style="color: rgba(0,0,0,0.54);background: url(&quot;assets/img/1BXNgBK-crime-scene-wallpaper.jpg&quot;) center / cover no-repeat;">
         <div class="pulse animated text" style="filter: brightness(NaN%);opacity: 0.69;transform-origin: center;">
