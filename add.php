@@ -1,6 +1,6 @@
 <?php
-include_once 'inc/functions.php';
-require_once 'inc/connection.php';
+include_once 'functions.php';
+require_once 'connection.php';
 
 $slc = trim(filter_input(INPUT_POST, 'slc', FILTER_SANITIZE_STRING));
 $publish = trim(filter_input(INPUT_POST, '_show', FILTER_SANITIZE_STRING));
@@ -41,7 +41,7 @@ if (isset($_POST['formsend']) || isset($_POST['admiadd'])) { //post all data
     } else {
         die("<script LANGUAGE='JavaScript'>
             window.alert('Report Sended issuess');
-            window.location.href='contact-us';
+            window.location.href='../';
             </script>");
     }
 }
@@ -50,9 +50,12 @@ if (isset($_POST['update'])) {
     if (updateperson($db, $slc, $publish, $id)) {
         echo ("<script LANGUAGE='JavaScript'>
                   window.alert('Succesfully Updated!');
-                  window.location.href='../admin.php';
+                  window.location.href='admin.php';
                   </script>");
     } else {
-        die("<script type='text/javascript'>alert('There is a error to sending form!');</script>");
+        die("<script LANGUAGE='JavaScript'>
+        window.alert('There is a Error sending form!');
+        window.location.href='admin.php';
+        </script>");
     }
 }

@@ -1,8 +1,8 @@
 <?php
 $title = "Home - BugSens";
-include 'inc/styleLinks.php';
-require_once 'inc/connection.php';
-require 'inc/functions.php';
+include 'styleLinks.php';
+require_once 'connection.php';
+require 'functions.php';
 
 
 $r_mp = homempdetail($db);
@@ -32,7 +32,8 @@ $r_cp = homecpdetail($db);
                         <div class="carousel-inner">
 
                             <?php $i = 0;
-                            while ($rec = $r_mp->fetch_assoc()) { ?>
+                            while ($rec = $r_mp->fetch_assoc()) {
+                            ?>
                                 <div class="carousel-item <?php if ($i == 0) {
                                                                 echo "active";
                                                             } ?>">
@@ -47,7 +48,8 @@ $r_cp = homecpdetail($db);
                                     </div>
                                 </div>
                             <?php ++$i;
-                            } ?>
+                            }
+                            ?>
                         </div>
                         <div><a class="carousel-control-prev cra" href="#carousel-1" role="button" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next cra" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
@@ -68,7 +70,9 @@ $r_cp = homecpdetail($db);
 
                             <?php $i = 0;
                             while ($rec = $r_cp->fetch_assoc()) { ?>
-                                <div class="carousel-item  <?php if ($i == 0) { echo "active";} ?>">
+                                <div class="carousel-item  <?php if ($i == 0) {
+                                                                echo "active";
+                                                            } ?>">
                                     <img class="d-block img-fluid" style="border-radius:20px; margin:auto;  max-width: 60%; width:100% height: auto;" src="images/<?php echo $rec["cp_photos"]; ?>" alt="Slide Image">
                                     <div class="row" style="padding-top: 10px;">
                                         <div class="col">
@@ -80,7 +84,8 @@ $r_cp = homecpdetail($db);
                                     </div>
                                 </div>
 
-                            <?php ++$i;} ?>
+                            <?php ++$i;
+                            } ?>
 
                         </div>
                         <div><a class="carousel-control-prev cra" href="#carousel-3" role="button" data-bs-slide="prev">
@@ -96,6 +101,6 @@ $r_cp = homecpdetail($db);
 </main>
 
 <?php
-include 'inc/footer.php';
+include 'footer.php';
 
 ?>

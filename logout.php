@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION=array();
+$_SESSION = array();
 session_destroy();
 session_reset();
-header('location:../adminlogin.php');
+header('location: adminlogin.php');

@@ -1,9 +1,9 @@
 <?php
 ob_start();
 $title = "Update";
-include 'inc/csslinks.php';
-include_once 'inc/connection.php';
-include_once 'inc/functions.php';
+include 'csslinks.php';
+include_once 'connection.php';
+include_once 'functions.php';
 
 $id = intval($_GET['id']);
 $slc = $_GET['slc'];
@@ -129,5 +129,5 @@ $rec = getperson($db, $id, $slc);
 
 <?php
 ob_end_flush();
-include 'inc/footeradmin.php';
+include 'footeradmin.php';
 ?>

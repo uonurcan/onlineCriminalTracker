@@ -24,4 +24,3 @@ if ($db->connect_error) {
    exit('Connect Error (' . $db->connect_errno . ') ' . $db->connect_error);
 }
 */
-?>

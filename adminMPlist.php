@@ -2,13 +2,13 @@
 $slc = 'mp';
 $tt = 'missingpeople';
 $title = "Missing People";
-require_once 'inc/connection.php';
-include 'inc/csslinks.php';
-include_once 'inc/functions.php';
+require_once 'connection.php';
+include 'csslinks.php';
+include_once 'functions.php';
 $name = filter_input(INPUT_POST, 'name');
 $r = searchPeople($db, $name, $slc, $tt);
 
-include 'inc/modals.php';
+include 'modals.php';
 
 ?>
 <section class="clean-block clean-blog-list dark">
@@ -34,7 +34,7 @@ include 'inc/modals.php';
     </div>
 </section>
 <?php
-include 'inc/table.php';
+include 'table.php';
 
 
-include 'inc/footeradmin.php';
+include 'footeradmin.php';

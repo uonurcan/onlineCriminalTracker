@@ -41,7 +41,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form enctype="multipart/form-data" action="/add.php/" method="POST">
+                    <form enctype="multipart/form-data" action="add.php" method="POST">
                         <!--Reporters İnformations-->
                         <div class="mb-3"><label class="form-label" for="_reporter">Reporter Name</label>
                             <input class="form-control" type="text" id="_reporter" name="_reporter" placeholder="Your Name...">
@@ -86,7 +86,7 @@
                         </div>
 
                         <div style="padding: auto;margin: auto;margin-top: 10px;">
-                            <input type="checkbox" class="checkk" name="publish">
+                            <input type="checkbox" class="checkk" name="_show">
                             <label class="form-label" style="padding-left: 10px;">Publishing&nbsp;</label>
                         </div>
 

@@ -5,9 +5,9 @@ $tt = 'criminalpeople';
 
 $personId = intval($_GET['id']);
 
-include 'inc/styleLinks.php';
-require_once 'inc/connection.php';
-require 'inc/functions.php';
+include 'styleLinks.php';
+require_once 'connection.php';
+require 'functions.php';
 
 $personDetail = personDetail($db, $personId, $slc, $tt);
 
@@ -58,5 +58,5 @@ $personDetail = personDetail($db, $personId, $slc, $tt);
 </main>
 
 <?php
-include 'inc/footer.php';
+include 'footer.php';
 ?>

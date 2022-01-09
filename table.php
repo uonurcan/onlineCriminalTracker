@@ -23,7 +23,7 @@
                                         ?>
                                            <tr>
                                                <td class="px300">
-                                                   <img class="rounded-circle me-2" width="30" height="30" src="../images/<?php echo $rec[$slc . '_photos']; ?>">
+                                                   <img class="rounded-circle me-2" width="30" height="30" src="images/<?php echo $rec[$slc . '_photos']; ?>">
                                                    <span> <?php echo $rec[$slc . '_name']; ?></span>
                                                </td>
                                                <td class="px300"><?php echo $rec[$slc . '_reporter']; ?></td>

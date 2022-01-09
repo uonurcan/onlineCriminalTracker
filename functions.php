@@ -3,15 +3,8 @@ ob_start();
 //if user login already reddirect user 
 function redirectisuserlogin()
 {
-   if (isset($_SESSION['userlogin'])) {
+   if (isset($_SESSION['userlogin']) && $_SESSION['userlogin'] == 'OK') {
       header('location:admin.php');
-   }
-}
-
-function redirectisNotuserlogin()
-{
-   if (!isset($_SESSION['userlogin'])) {
-      header('location:../');
    }
 }
 
@@ -130,13 +123,12 @@ function sendForm($db, $select, $reporter, $reporteremail, $phone, $name, $age, 
    if ($publish == 'on') {
       $show = 1;
    }
-
-
    $slc = ($select == 'missingpeople') ? 'mp' : 'cp';
 
    $date = date("Y/m/d");
 
    $query = 'INSERT INTO `' . $select . '` (`' . $slc . '_reporter`, `' . $slc . '_reportermail`, `' . $slc . '_phone`, `' . $slc . '_name`, `' . $slc . '_age`, `' . $slc . '_contact`, `' . $slc . '_details`, `' . $slc . '_photos`, `' . $slc . '_show`, `' . $slc . '_date`) VALUES (?,?,?,?,?,?,?,?,?,?)';
+
    $stmt = $db->stmt_init();
    $stmt->prepare($query) or exit('Query Error.' . $db->errno);
    $stmt->bind_param('ssssssssis', $reporter, $reporteremail, $phone, $name, $age, $contact, $details, $photo, $show, $date) or exit('Bind Param Error.');

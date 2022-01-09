@@ -1,9 +1,9 @@
 <?php
 ob_start();
 $title = "Profile";
-include 'inc/csslinks.php';
-include_once 'inc/connection.php';
-include_once 'inc/functions.php';
+include 'csslinks.php';
+include_once 'connection.php';
+include_once 'functions.php';
 
 $id = $_SESSION['userdata']['adminID'];
 
@@ -11,7 +11,7 @@ $id = $_SESSION['userdata']['adminID'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $editname = $_POST['fullname'];
     $department = $_POST['department'];
-    edituser($db,$editname,$department,$id);
+    edituser($db, $editname, $department, $id);
 }
 ?>
 <div class="container-fluid">
@@ -70,5 +70,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 <?php
 ob_end_flush();
-include 'inc/footeradmin.php';
+include 'footeradmin.php';
 ?>

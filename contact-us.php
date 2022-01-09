@@ -1,6 +1,6 @@
 <?php
 $title = "Contact Us - BugSens";
-include 'inc/styleLinks.php';
+include 'styleLinks.php';
 
 ?>
 <main class="page contact-us-page">
@@ -10,7 +10,7 @@ include 'inc/styleLinks.php';
                 <h2 class="display-5" style="color: #8a24b1;">Contact Us</h2>
                 <p>You can contact us by filling out the form below, report crimes, help missing people.</p>
             </div>
-            
+
             <form enctype="multipart/form-data" action="add.php" method="POST" data-aos="zoom-out" data-aos-once="true" style="border-color: rgb(137,37,177);">
 
                 <!--Reporters İnformations-->
@@ -70,5 +70,5 @@ include 'inc/styleLinks.php';
 </main>
 
 <?php
-include 'inc/footer.php';
+include 'footer.php';
 ?>
