@@ -1,6 +1,6 @@
 <?php
 $title ="FAQ - BugSens";
-include 'styleLinks.php';
+include 'inc/styleLinks.php';
 
  ?>
 
@@ -37,7 +37,6 @@ include 'styleLinks.php';
     </main>
     
  <?php
-include 'footer.php';
-include 'scriptLinks.php';
+include 'inc/footer.php';
 
  ?>

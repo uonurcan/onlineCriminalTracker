@@ -1,8 +1,8 @@
 <?php
 $title = "Home - BugSens";
-include 'styleLinks.php';
-require_once 'connection.php';
-require 'functions.php';
+include 'inc/styleLinks.php';
+require_once 'inc/connection.php';
+require 'inc/functions.php';
 
 
 $r_mp = homempdetail($db);
@@ -96,7 +96,6 @@ $r_cp = homecpdetail($db);
 </main>
 
 <?php
-include 'footer.php';
-include 'scriptLinks.php';
+include 'inc/footer.php';
 
 ?>
