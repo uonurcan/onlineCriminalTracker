@@ -19,6 +19,6 @@ session_start();
 </head>
 <?php
 if ($title != "Login") {
-    include_once 'nav.php';
+    include 'nav.php';
 }
 ?>

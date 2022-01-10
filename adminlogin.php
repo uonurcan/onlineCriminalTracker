@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['userdata'] = $row;
 
 
-            header('location:admin');
+            header('location:admin.php');
         } else { // wrong password
             echo "password is wrong<br/>";
         }

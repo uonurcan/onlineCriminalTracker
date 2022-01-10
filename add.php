@@ -33,18 +33,26 @@ if (isset($_POST['formsend']) || isset($_POST['admiadd'])) { //post all data
         //===== Add Recipe to the database ================================================================
 
         if (sendForm($db, $select, $reporter, $reporteremail, $phone, $name, $age, $contact, $details, $filename, $publish)) {
-            echo ("<script LANGUAGE='JavaScript'>
+            if (isset($_POST['admiadd'])) {
+                echo ("<script LANGUAGE='JavaScript'>
                           window.alert('Succesfully Added!');
                           window.location.href='../admin.php';
                           </script>");
+            } else {
+                echo ("<script LANGUAGE='JavaScript'>
+            window.alert('Succesfully Added!');
+            window.location.href='../';
+            </script>");
+            }
         }
-    } else {
-        die("<script LANGUAGE='JavaScript'>
+    }
+} else {
+    die("<script LANGUAGE='JavaScript'>
             window.alert('Report Sended issuess');
             window.location.href='../';
             </script>");
-    }
 }
+
 
 if (isset($_POST['update'])) {
     if (updateperson($db, $slc, $publish, $id)) {
