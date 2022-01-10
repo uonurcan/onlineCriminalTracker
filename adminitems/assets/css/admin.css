@@ -1,0 +1,28 @@
+textarea {
+  resize: none;
+}
+
+.px100 {
+  width: 100px;
+  min-width: 100px;
+}
+
+.px200 {
+  width: 150px;
+  min-width: 150px;
+}
+
+.px300 {
+  width: 200px;
+  min-width: 200px;
+}
+
+.checkk {
+  width: 20px;
+  height: 20px;
+}
+
+.txtareaintable {
+  padding-bottom: 53px;
+}
+

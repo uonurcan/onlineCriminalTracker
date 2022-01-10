@@ -1,0 +1,6 @@
+RedirectMatch 403 ^/admin/?$
+RedirectMatch 403 ^/admin/assets/?$
+RedirectMatch 403 ^/assets/?$
+RedirectMatch 403 ^/images/?$
+RedirectMatch 403 ^/inc/?$
+
