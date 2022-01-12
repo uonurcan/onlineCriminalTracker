@@ -11,6 +11,12 @@ Test login -->
 username= admin
 password= admin
 
+ Ali Atılgan  → Scrum Master & Back-End Developer
+ Berkay Kalaycı→ Back-End Developer
+ Beytullah Gezginci → Database Developer & Designer 
+ Mohamed Elshagmani→ Front-End Developer
+ Onur Can Uzunşimşek  → Front-End Developer
+
 ![image](https://user-images.githubusercontent.com/75696715/149083480-11193a2a-489d-4d36-bba6-c6ab1facd571.png)
 
 
